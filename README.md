@@ -2,17 +2,11 @@
 
 This is a library for walking the file system.  It's got a simple interface - you just pass it a function that you want to be run on all the files.  You get back an array that's the result of running your function on each file.  It's essentially 'map' applied to the file system.  Performance should be very fast, since each directory's contents are processed in parallel.
 
-All the options passed in through the first arg are optional.  If given no args, your callback will receive a list of filenames.
-
-As of this writing, there are 3 options:
-
-* processFile: (filename, next) ->
-* filter: (filename, next) ->
-* hidden: [true|false]
-
-You can give nomad a filename or a dirname as the second arg.  An array will be returned regardless, it will just contain one item in the case that you supplied a filename.
-
 ## Usage
+
+```bash
+npm install nomad
+```
 
 ```coffee-script
 nomad = require 'nomad'
@@ -29,6 +23,18 @@ nomad.walk {processFile: loadFile, filter: filter}, dirname, (err, contents) ->
   # array consisting of all the files
   console.log 'contents:', contents
 ```
+
+## Details
+
+All the options passed in through the first arg are optional.  If given no args, your callback will receive a list of filenames.
+
+As of this writing, there are 3 options:
+
+* processFile: (filename, next) ->
+* filter: (filename, next) ->
+* hidden: [true|false]
+
+You can give nomad a filename or a dirname as the second arg.  An array will be returned regardless, it will just contain one item in the case that you supplied a filename.
 
 ## Why write it, why use it?
 
