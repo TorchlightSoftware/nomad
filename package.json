@@ -1,0 +1,30 @@
+{
+  "name":"Nomad",
+  "description":"Simple file system walker.",
+  "version":"0.0.1",
+  "homepage":"http://github.com/TorchlightSoftware/nomad",
+  "repository":"git://github.com/TorchlightSoftware/nomad.git",
+  "author":"Torchlight Software <info@torchlightsoftware.com> (http://torchlightsoftware.com)",
+  "main":"./index.js",
+
+  "dependencies":{
+    "coffee-script":"*",
+    "async":"*"
+  },
+  "devDependencies":{
+    "mocha":"*",
+    "should":"*"
+  },
+  "engines":{
+    "node":">= 0.8.4"
+  },
+  "licenses":[
+    {
+      "type":"MIT",
+      "url":"http://github.com/torchlightsoftware/nomad/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test":"mocha"
+  }
+}
