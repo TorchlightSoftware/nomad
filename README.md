@@ -2,11 +2,13 @@
 
 This is a library for walking the file system.  It's got a simple interface - you just pass it a function that you want to be run on all the files.  You get back an array that's the result of running your function on each file.  It's essentially 'map' applied to the file system.  Performance should be very fast, since each directory's contents are processed in parallel.
 
-## Usage
+## Install
 
 ```bash
 npm install nomad
 ```
+
+## Usage
 
 ```coffee-script
 nomad = require 'nomad'
