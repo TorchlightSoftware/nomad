@@ -1,7 +1,7 @@
 {
   "name":"nomad",
   "description":"Simple file system walker.",
-  "version":"0.0.1",
+  "version":"0.0.3",
   "homepage":"http://github.com/TorchlightSoftware/nomad",
   "repository":"git://github.com/TorchlightSoftware/nomad.git",
   "author":"Torchlight Software <info@torchlightsoftware.com> (http://torchlightsoftware.com)",
