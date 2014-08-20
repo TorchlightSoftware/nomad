@@ -50,6 +50,8 @@ helpers =
 
     # process file or recurse directory
     stat path, (err, stats) =>
+      return done(err) if err?
+
       if stats.isDirectory()
         recurseDirectory path, done
       else
